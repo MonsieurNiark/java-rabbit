@@ -1,0 +1,12 @@
+spring:
+  rabbitmq:
+    host: localhost # The hostname where you docker/rabbitMQ is hosted
+    port: 5672 # Default port of rabbitMQ input. Not the GUI one
+    username: guest # User allowed to create and write/read into queues
+    password: guest # his password
+queue_one:  # Here you can define your queue. Adding more queue while writing "queue_three" will not add more queues.
+  # For that, you will have to instance it in the java producer
+  name: firstQueue # The queue name
+
+queue_two: #example if you want to add another queue
+  name: secondQueue
